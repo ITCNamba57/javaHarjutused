@@ -23,16 +23,16 @@ public class Peamurdja2_ristmik extends Application {
 
         int count = 0;
         while (count < 10) {
-            Tsykkel(foor1);
-            Tsykkel(foor2);
-            foor3.paus(8.5);
-            foor4.paus(8.5);
-            Tsykkel(foor3);
-            Tsykkel(foor4);
-            foor1.paus(8.5);
-            foor2.paus(8.5);
+            doublefoor(foor1, foor2, foor3, foor4);
+            doublefoor(foor3, foor4, foor1, foor2);
             count++;
         }
+    }
+    public void doublefoor (Foor foor1, Foor foor2, Foor foor3, Foor foor4){
+        Tsykkel(foor1);
+        Tsykkel(foor2);
+        foor3.paus(8.5);
+        foor4.paus(8.5);
     }
 
 
