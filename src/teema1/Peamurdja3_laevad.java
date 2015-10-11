@@ -18,7 +18,7 @@ import java.util.Scanner;
  */
 public class Peamurdja3_laevad {
     public static void main(String[] args) {
-        
+
         char[] field = {'_','_','_','_','_','_','_','_','_','_'};
         int count = 0;
         while (count < 10){
