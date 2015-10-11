@@ -1,5 +1,7 @@
 package teema1;
 
+import java.util.Scanner;
+
 /**
  * 1. Kirjutada meetod, mis tagastab parameetrina etteantud arvu kuubi.
  * 2. Kirjutada meetod, mis saab parameetritena kaks arvu (vahemiku) ning
@@ -10,10 +12,15 @@ package teema1;
 public class Harjutus2_meetodid {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Print number:");
+        int num = sc.nextInt();
+        System.out.println("Your number in cube is: " + tostaKuupi(num));
     }
 
+
     public static int tostaKuupi(int arv) {
-        return 0;
+        return arv*arv*arv;
     }
 
     public static int kasutajaSisestus(String kysimus, int min, int max) {

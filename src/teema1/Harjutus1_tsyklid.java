@@ -18,6 +18,16 @@ package teema1;
  */
 public class Harjutus1_tsyklid {
     public static void main(String[] args) {
+        int count = 0;
+        while (count < 10) {
+            int i = 0;
+            while (i < 10) {
+                System.out.print((i + count)%10 +  " ");
+                i ++;
+            }
+            System.out.println();
+            count ++;
+        }
 
     }
 }
