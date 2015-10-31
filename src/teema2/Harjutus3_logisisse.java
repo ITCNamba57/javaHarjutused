@@ -29,11 +29,17 @@ public class Harjutus3_logisisse extends Application {
 
         Label kasutajalabel = new Label("Kasutajanimi");
         TextField kasutajaInput = new TextField();
-        vbox.getChildren().addAll(kasutajalabel, kasutajaInput);
 
         Label passlabel = new Label("Parool");
         PasswordField passInput = new PasswordField();
-        vbox.getChildren().addAll(passlabel, passInput);
+
+        Button nupp = new Button("Logi Sisse");
+        nupp.setOnAction(event -> {
+            System.out.println("You have 100 unread messages.");
+        });
+
+        vbox.getChildren().addAll(passlabel, passInput, kasutajalabel, kasutajaInput, nupp);
+
 
 
     }
