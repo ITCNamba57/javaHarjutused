@@ -2,7 +2,6 @@ package teema1;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import lib.Foor;
 
 /**
  * Kasuta objekti Foor, et teha valgusfoori tsükkel 5 korda.
@@ -20,32 +19,7 @@ import lib.Foor;
  * Kliki punase teksti peale ja vajuta alt+enter.
  */
 public class Peamurdja1_foor extends Application {
-
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Foor foor = new Foor();
-
-        int count = 0;
-        while (count < 5) {
-            foor.vahetaPunast();
-            foor.paus(1);
-            foor.vahetaKollast();
-            foor.paus(1);
-            foor.vahetaPunast();
-            foor.vahetaKollast();
-            foor.vahetaRohelist();
-            foor.paus(1);
-            int i = 0;
-            while (i < 7) {
-                foor.vahetaRohelist();
-                foor.paus(0.5);
-                i ++;
-            }
-            foor.vahetaKollast();
-            foor.paus(1);
-            foor.vahetaKollast();
-            count ++;
-        }
-
     }
 }

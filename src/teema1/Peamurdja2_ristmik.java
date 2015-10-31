@@ -15,50 +15,5 @@ public class Peamurdja2_ristmik extends Application {
         Foor foor2 = new Foor(Foor.ALUMINE, primaryStage);
         Foor foor3 = new Foor(Foor.PAREM, primaryStage);
         Foor foor4 = new Foor(Foor.VASAK, primaryStage);
-
-        teePunaseks(foor1);
-        teePunaseks(foor2);
-        teePunaseks(foor3);
-        teePunaseks(foor4);
-
-        int count = 0;
-        while (count < 10) {
-            doublefoor(foor1, foor2, foor3, foor4);
-            doublefoor(foor3, foor4, foor1, foor2);
-            count++;
-        }
     }
-    public void doublefoor (Foor foor1, Foor foor2, Foor foor3, Foor foor4){
-        Tsykkel(foor1);
-        Tsykkel(foor2);
-        foor3.paus(8.5);
-        foor4.paus(8.5);
-    }
-
-
-    public void  teePunaseks(Foor foor) {
-        foor.vahetaPunast();
-        foor.paus(0.5);
-    }
-
-    public void Tsykkel(Foor foor){
-        foor.paus(2);
-        foor.vahetaKollast();
-        foor.paus(1);
-        foor.vahetaPunast();
-        foor.vahetaKollast();
-        foor.vahetaRohelist();
-        foor.paus(1);
-        int i = 0;
-        while (i < 7) {
-            foor.vahetaRohelist();
-            foor.paus(0.5);
-            i ++;
-        }
-        foor.vahetaKollast();
-        foor.paus(1);
-        foor.vahetaKollast();
-        foor.vahetaPunast();
-    }
-
 }
