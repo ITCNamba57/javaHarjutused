@@ -9,6 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 /**
@@ -24,6 +25,7 @@ public class Harjutus3_logisisse extends Application {
         VBox vbox = new VBox();
         Scene stseen = new Scene(vbox);
         primaryStage.setScene(stseen);
+        Label teadeLabel = new Label();
 
         primaryStage.show();
 
@@ -35,7 +37,16 @@ public class Harjutus3_logisisse extends Application {
 
         Button nupp = new Button("Logi Sisse");
         nupp.setOnAction(event -> {
-            System.out.println("You have 100 unread messages.");
+            String kasutajaSisu = kasutajaInput.getText();
+            String passSisu = passInput.getText();
+            if (kasutajaSisu.equals("Krister") && passSisu.equals("salavark")) {
+                System.out.println("Logisid sisse");
+            } else {
+                teadeLabel.setText("Ei saa sisse");
+            }
+
+
+
         });
 
         vbox.getChildren().addAll(passlabel, passInput, kasutajalabel, kasutajaInput, nupp);
