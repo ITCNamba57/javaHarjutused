@@ -31,14 +31,17 @@ public class Harjutus1_lipud extends Application {
 
         Rectangle kast1 = new Rectangle(100, 100, 500, 100);
         kast1.setFill(Color.DARKBLUE);
+        kast1.setStroke(Color.BLACK);
         pane1.getChildren().add(kast1);
 
         Rectangle kast2 = new Rectangle(100, 200, 500, 100);
         kast2.setFill(Color.BLACK);
+        kast2.setStroke(Color.BLACK);
         pane1.getChildren().add(kast2);
 
         Rectangle kast3 = new Rectangle(100, 300, 500, 100);
         kast3.setFill(Color.ANTIQUEWHITE);
+        kast3.setStroke(Color.BLACK);
         pane1.getChildren().add(kast3);
 
         lava1.show();
@@ -52,6 +55,7 @@ public class Harjutus1_lipud extends Application {
 
         Rectangle kast4 = new Rectangle(100, 100, 500, 300);
         kast4.setFill(Color.ANTIQUEWHITE);
+        kast4.setStroke(Color.BLACK);
         pane2.getChildren().add(kast4);
 
         Circle circle = new Circle(350, 250, 100);
